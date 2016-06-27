@@ -10,5 +10,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //这是MainActivity，是程序的入口
+        //这里需要做修改 2016.6。27
     }
 }
