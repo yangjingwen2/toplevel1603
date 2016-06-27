@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //这是MainActivity，是程序的入口
         //这里需要做修改 2016.6。27
-    }mHomeText = (TextView) findViewById(R.id.home_textview);
-    mHomeText.setText("这是Git");
+        mHomeText = (TextView) findViewById(R.id.home_textview);
+        mHomeText.setText("这是Git");
+    }
 }
