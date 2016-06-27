@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TopLevel1603.iml" filepath="$PROJECT_DIR$/TopLevel1603.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknifedemo/butterknifedemo.iml" filepath="$PROJECT_DIR$/butterknifedemo/butterknifedemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/reflectdemo/reflectdemo.iml" filepath="$PROJECT_DIR$/reflectdemo/reflectdemo.iml" />
     </modules>
   </component>
 </project>
