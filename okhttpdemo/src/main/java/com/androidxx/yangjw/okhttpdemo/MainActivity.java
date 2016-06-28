@@ -39,6 +39,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case 1:
                 intent.setClass(this,PostActivity.class);
                 break;
+            case 2:
+                intent.setClass(this,UploadActivity.class);
+                break;
+            case 3:
+                intent.setClass(this,DownloadActivity.class);
+                break;
+            case 4:
+                intent.setClass(this,CacheActivity.class);
+                break;
         }
         startActivity(intent);
     }
