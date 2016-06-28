@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OkHttpDemo</string>
+
+    <string-array name="home_index_array">
+        <item>Get请求</item>
+        <item>Post请求</item>
+        <item>上传</item>
+        <item>下载</item>
+        <item>缓存</item>
+    </string-array>
+</resources>
