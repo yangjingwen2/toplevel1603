@@ -22,7 +22,7 @@ import okhttp3.Response;
  * OkHttp的Get请求方式
  * 分2种：
  * 1、同步请求  execute方法就是同步请求
- * 2、异步请求 enqueue方法就是异步请求
+ * 2、异步请求 enqueue方法就是异步请求，开启的新的线程执行请求，并且子线程是有线程池管理
  */
 public class GetActivity extends AppCompatActivity implements View.OnClickListener{
 

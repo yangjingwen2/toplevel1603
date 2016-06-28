@@ -13,6 +13,9 @@ import android.widget.ListView;
  * 2、Post请求的使用
  * 3、上传和下载
  * 4、缓存
+ *
+ * 注意事项：
+ * OkHttpClient在一个APP中建议只有一个。（OkHttpClient对象是单利）
  */
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
@@ -32,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         switch (position) {
             case 0: //Get请求
                 intent.setClass(this,GetActivity.class);
+                break;
+            case 1:
+                intent.setClass(this,PostActivity.class);
                 break;
         }
         startActivity(intent);
