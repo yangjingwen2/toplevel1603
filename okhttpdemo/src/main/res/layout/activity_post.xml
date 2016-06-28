@@ -13,11 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Post的异步请求"/>
+
+    <Button
+        android:id="@+id/okhttp_post_json_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/okhttp_post_async_btn"
+        android:text="Post的JSON数据传递"/>
     <TextView
         android:id="@+id/okhttp_post_show_result_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/okhttp_post_async_btn"/>
+        android:layout_below="@id/okhttp_post_json_btn"/>
 
 
 </RelativeLayout>
