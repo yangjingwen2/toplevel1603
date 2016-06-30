@@ -29,12 +29,12 @@ public class CircleImageBehavior extends CoordinatorLayout.Behavior<CircleImageV
     int i = 10;
     @Override
     public boolean onDependentViewChanged(CoordinatorLayout parent, CircleImageView child, View dependency) {
-//        float translationY = dependency.getTranslationY();
-//        float y = dependency.getY();
-//        Log.d("androidxx", translationY +" ::::::  " + y);
+        float translationY = dependency.getTranslationY();
+        float y = dependency.getY();
+        Log.d("androidxx", translationY +" ::::::  " + y);
 //        int height = dependency.getHeight();
 //        ViewCompat.offsetLeftAndRight(child,(int)(height - dependency.getY()));
-        child.setY(dependency.getY()+10);
+        child.setY(dependency.getY() - 40);
         child.setX(dependency.getWidth()/2 - dependency.getY() - child.getWidth()/2);
         return true;
     }

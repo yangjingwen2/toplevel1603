@@ -66,9 +66,7 @@
             android:src="@drawable/a3"
             android:layout_marginLeft="30dp"
             app:civ_border_width="2dp"
-            app:civ_border_color="#FFFFFF"
-            app:layout_anchor="@id/details_appbar_layout"
-            app:layout_anchorGravity="bottom"/>
+            app:civ_border_color="#FFFFFF"/>
     </android.support.design.widget.CoordinatorLayout>
 
 </RelativeLayout>
