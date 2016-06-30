@@ -18,7 +18,13 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".CustomBehaviorActivity" />
         <activity android:name=".AppBarActivity" />
-        <activity android:name=".CollapsingToolBarLayoutActivity"></activity>
+        <activity android:name=".CollapsingToolBarLayoutActivity" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".SnackBarActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".AnimActivity" />
+        <activity android:name=".Anim2Activity" />
+        <activity android:name=".RefreshTabActivity"></activity>
     </application>
 
 </manifest>

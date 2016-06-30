@@ -1,6 +1,7 @@
 package com.androidxx.yangjw.coordinatorlayoutdemo;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,12 @@ public class IndexActivity extends AppCompatActivity {
     private String[] strs = {"Coordinator"
             ,"custom behavior"
             ,"appbarlayout"
-            ,"CollapsingToolBarLayout"};
+            ,"CollapsingToolBarLayout"
+            ,"一个Demo而已"
+            ,"SnackBar的基本使用"
+            ,"新的输入框"
+            ,"平移动画"
+            ,"刷新控件"};
     public ArrayAdapter<String> adapter;
 
     @Override
@@ -40,6 +46,21 @@ public class IndexActivity extends AppCompatActivity {
                         break;
                     case 3:
                         intent.setClass(IndexActivity.this,CollapsingToolBarLayoutActivity.class);
+                        break;
+                    case 4:
+                        intent.setClass(IndexActivity.this,DetailsActivity.class);
+                        break;
+                    case 5:
+                        intent.setClass(IndexActivity.this,SnackBarActivity.class);
+                        break;
+                    case 6:
+                        intent.setClass(IndexActivity.this,EditTextActivity.class);
+                        break;
+                    case 7:
+                        intent.setClass(IndexActivity.this,AnimActivity.class);
+                        break;
+                    case 8:
+                        intent.setClass(IndexActivity.this,RefreshTabActivity.class);
                         break;
                 }
                 startActivity(intent);
