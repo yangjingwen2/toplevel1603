@@ -11,7 +11,10 @@ import android.widget.ListView;
 public class IndexActivity extends AppCompatActivity {
 
     public ListView mListView;
-    private String[] strs = {"Coordinator","custom behavior"};
+    private String[] strs = {"Coordinator"
+            ,"custom behavior"
+            ,"appbarlayout"
+            ,"CollapsingToolBarLayout"};
     public ArrayAdapter<String> adapter;
 
     @Override
@@ -31,6 +34,12 @@ public class IndexActivity extends AppCompatActivity {
                         break;
                     case 1:
                         intent.setClass(IndexActivity.this,CustomBehaviorActivity.class);
+                        break;
+                    case 2:
+                        intent.setClass(IndexActivity.this,AppBarActivity.class);
+                        break;
+                    case 3:
+                        intent.setClass(IndexActivity.this,CollapsingToolBarLayoutActivity.class);
                         break;
                 }
                 startActivity(intent);
