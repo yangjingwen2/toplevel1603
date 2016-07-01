@@ -6,5 +6,7 @@
         <item>全屏的VideoView</item>
         <item>SurfaceView的使用</item>
         <item>自定义SurfaceView的使用</item>
+        <item>在子线程中完成图像的绘制</item>
+        <item>MediaPlayer+SurfaceView</item>
     </string-array>
 </resources>

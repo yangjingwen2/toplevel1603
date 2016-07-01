@@ -20,7 +20,9 @@
         <activity android:name=".VideoViewActivity" />
         <activity android:name=".FullScreenVideoActivity" />
         <activity android:name=".SurfaceViewActivity" />
-        <activity android:name=".CustomSurfaceViewActivity"></activity>
+        <activity android:name=".CustomSurfaceViewActivity" />
+        <activity android:name=".ThreadSurfaceActivity" />
+        <activity android:name=".MediaSurfaceActivity"></activity>
     </application>
 
 </manifest>

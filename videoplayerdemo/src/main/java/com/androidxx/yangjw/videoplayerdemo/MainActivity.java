@@ -38,6 +38,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case 3:
                 intent.setClass(this,CustomSurfaceViewActivity.class);
                 break;
+            case 4:
+                intent.setClass(this,ThreadSurfaceActivity.class);
+                break;
+            case 5:
+                intent.setClass(this,MediaSurfaceActivity.class);
+                break;
          }
         startActivity(intent);
     }
