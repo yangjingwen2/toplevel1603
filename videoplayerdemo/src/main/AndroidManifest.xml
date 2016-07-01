@@ -22,7 +22,11 @@
         <activity android:name=".SurfaceViewActivity" />
         <activity android:name=".CustomSurfaceViewActivity" />
         <activity android:name=".ThreadSurfaceActivity" />
-        <activity android:name=".MediaSurfaceActivity"></activity>
+        <activity android:name=".MediaSurfaceActivity" />
+        <activity android:name=".VitamioActivity" />
+        <activity android:name=".JiecaoActivity" />
+        <activity android:name=".DanmuActivity" />
+        <activity android:name=".PlaneActivity"></activity>
     </application>
 
 </manifest>
