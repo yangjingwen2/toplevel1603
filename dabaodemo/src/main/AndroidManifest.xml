@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 此标签经常作为配置信息设置 -->
+        <!-- ${APP_CHANNEL} 表示引用一个名称为APP_CHANNEL变量-->
+        <meta-data android:name="CHANNEL" android:value="${APP_CHANNEL}"/>
     </application>
 
 </manifest>

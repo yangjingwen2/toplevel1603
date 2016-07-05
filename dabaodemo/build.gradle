@@ -40,6 +40,28 @@ android {
 
     }
 
+    //制定APP的多个渠道（平台）
+    productFlavors {
+        _360 {
+            versionName "2.1"
+            versionCode 21
+            //声明一个变量为APP_CHANNEL的占位符
+            manifestPlaceholders = [APP_CHANNEL:"_360"]
+        }
+
+        xiaomi {
+            versionName "2.2"
+            versionCode 22
+            manifestPlaceholders = [APP_CHANNEL: "xiaomi"]
+        }
+
+        huawei {
+            versionName "1.5"
+            manifestPlaceholders = [APP_CHANNEL: "huawei"]
+        }
+
+    }
+
 }
 
 //当前项目依赖的第三方包
