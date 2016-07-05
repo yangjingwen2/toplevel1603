@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'//表示当前的项目是一个android项目。编译的时候采用android的编译工具
+
+//android项目的一些配置信息
+android {
+    //编译的版本号
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3" //构建项目时的版本号
+
+    //项目默认的配置
+    defaultConfig {
+        applicationId "com.androidxx.yangjw.dabaodemo"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1 //取值注意：只能大于或者等于当前的值
+        versionName "1.0" //1.1.1注意：不要将versionName转换成浮点数
+    }
+    //构建类型（打包成APK的一个类型）
+    buildTypes {
+        //对应的是一个正式的版本
+        release {
+            minifyEnabled true //true表示优化当前APK到最小的大小，简单说，就是将项目中没有使用的自动文件删除
+            //混淆配置：混淆代码.只有minifyEnabled为true的时候此混淆规则才会生效
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        //注意：如果打包成APK后程序反而出错了，则表示不应该混淆的代码被混淆了。
+        //解决办法：1、看错误信息，2、通过错误信息找到哪一个类出问题，3、对此类不进行混淆
+        //测试版本
+        debug {
+            minifyEnabled false //true表示优化当前APK到最小的大小，简单说，就是将项目中没有使用的自动文件删除
+            //混淆配置：混淆代码.
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        developer {
+            minifyEnabled false //true表示优化当前APK到最小的大小，简单说，就是将项目中没有使用的自动文件删除
+            //混淆配置：混淆代码
+            //proguard-rules.pro文档中配置的是自定义的混淆规则
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+}
+
+//当前项目依赖的第三方包
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}
