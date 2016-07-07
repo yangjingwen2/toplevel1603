@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ListView;
 
+import com.androidxx.yangjw.eventdispatchdemo.listview.ListViewActivity;
 import com.androidxx.yangjw.eventdispatchdemo.viewpager.ViewPagerDrawerEventActivity;
 
 /**
@@ -26,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click(View view) {
-        Intent intent = new Intent(this, ViewPagerDrawerEventActivity.class);
+        Intent intent = new Intent(this, ListViewActivity.class);
         startActivity(intent);
     }
     /**

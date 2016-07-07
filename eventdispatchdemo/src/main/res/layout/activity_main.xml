@@ -13,5 +13,6 @@
     <com.androidxx.yangjw.eventdispatchdemo.CustomButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="click"
         android:text="事件分发" />
 </com.androidxx.yangjw.eventdispatchdemo.CustomLinearLayout>

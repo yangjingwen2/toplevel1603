@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".viewpager.ViewPagerDrawerEventActivity"></activity>
+        <activity android:name=".viewpager.ViewPagerDrawerEventActivity" />
+        <activity android:name=".listview.ListViewActivity"></activity>
     </application>
 
 </manifest>
