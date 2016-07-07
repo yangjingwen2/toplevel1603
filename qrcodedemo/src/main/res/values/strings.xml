@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QrCodeDemo</string>
+    <string-array name="index_data">
+        <item>拍照</item>
+        <item>二维码扫描</item>
+    </string-array>
+</resources>
