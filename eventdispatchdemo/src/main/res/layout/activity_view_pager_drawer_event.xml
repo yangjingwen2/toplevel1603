@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidxx.yangjw.eventdispatchdemo.viewpager.ViewPagerDrawerEventActivity">
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.androidxx.yangjw.eventdispatchdemo.viewpager.CustomViewPager
+            android:id="@+id/event_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="#FFFF00"
+            android:text="这是抽屉"
+            android:layout_gravity="left"/>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
