@@ -1,5 +1,10 @@
 apply plugin: 'com.android.application'
 
+repositories{ //直接放在根标签下
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
@@ -21,6 +26,7 @@ android {
     sourceSets {
         main {
             jniLibs.srcDir("libs")//so资源文件所在的目录
+            //assets.srcDir("assets")
         }
     }
 
@@ -45,4 +51,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile files('libs/umeng-analytics-v6.0.1.jar')
+    compile files('libs/MobCommons-2016.0623.1641.jar')
+
+    compile name:'SMSSDK-2.1.0',ext:'aar'
+    compile name:'SMSSDKGUI-2.1.0',ext:'aar'
 }
