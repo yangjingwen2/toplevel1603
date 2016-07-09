@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/cart_item_control_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <Button
+            android:id="@+id/cart_item_plus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="+"/>
+        <TextView
+            android:id="@+id/cart_item_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+        <Button
+            android:id="@+id/cart_item_minus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="-"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cart_item_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XXXXX"
+        android:layout_toLeftOf="@+id/cart_item_control_layout"/>
+</RelativeLayout>
